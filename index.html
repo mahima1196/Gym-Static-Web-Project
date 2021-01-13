@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /*Css Reset*/
+    body {
+        font-family: 'Baloo Bhai 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url("Img/abc.jpg");
+    }
+
+    .left {
+        position: absolute;
+        left: 20px;
+        top: 0px;
+
+    }
+
+    .left img {
+        padding: 5px;
+        width: 100px;
+        filter: invert(100%);
+        /* ---> to change the logo color*/
+    }
+
+    .left div {
+        text-align: right;
+        line-height: 19px;
+        text-align: center;
+    }
+
+    .Center {
+        display: block;
+        width: 36%;
+        text-align: center;
+        margin: 10px auto;
+
+
+    }
+
+    .right {
+        position: absolute;
+        right: 34px;
+        top: 10px;
+        display: inline-block;
+    }
+
+    .navbar {
+        display: inline-block;
+    }
+
+    .navbar li {
+        display: inline-block;
+        font-size: 18px;
+    }
+
+    .navbar li a {
+        color: whitesmoke;
+        padding-right: 30px;
+    }
+
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: gold;
+    }
+
+    .btn {
+        margin: 10px 5px;
+        background-color: black;
+        color: white;
+        padding: 5px 14px;
+        border: 2px solid grey;
+        font-family: 'Baloo Bhai 2', cursive;
+        border-radius: 50px;
+        font-size: 15px;
+        cursor: pointer;
+
+    }
+
+    .btn:hover {
+        color: gold;
+    }
+
+    .container {
+       
+        margin: 100px 450px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 2px;
+    }
+    .form-group  input {
+    text-align: center;
+    margin : 11px auto;
+    display: block;
+    width: 324px;
+    padding: 6px;
+    border: -5px;
+    font-size: 15px;
+    font-family: 'Baloo Bhai 2', cursive;
+    }
+    .form-group button{
+        margin : 11px 55px;
+        width: 340px;
+        background-color: black;
+        color: white;
+        padding: 5px 14px;
+        border: 2px solid grey;
+        border-radius: 50px;
+        font-size: 15px;
+        font-family: 'Baloo Bhai 2', cursive;
+        cursor: pointer;
+
+    }
+.container h1{
+    margin : 11px 60px;
+}
+</style>
+
+<body>
+    <header class="header">
+        <div class="left">
+            <img src="img/gym-logo.jpg" alt="">
+            <div>Fitness Center</div>
+        </div>
+        <div class="Center">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Cal</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        </div>
+        <div class="right">
+
+            <button class="btn">Call Us</button>
+            <button class="btn">Email us</button>
+
+        </div>
+    </header>
+    <div class="container">
+       <h1>JOIN THE FITNESS GYM</h1>
+       <form action="noaction.php">
+           <div class="form-group">
+               <input type="text" name ="" placeholder="Enter your name">
+               <input type="number" name ="" placeholder="Enter your age">
+               <input type="text" name ="" placeholder="Enter your mobile numb er">
+               <input type="email" name ="" placeholder="Enter your email address">
+               <button class="btn"> Submit </button>
+
+           </div>
+       </form>
+    </div>
+</body>
+
+</html>
